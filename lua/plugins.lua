@@ -23,7 +23,7 @@ return {
   'hrsh7th/cmp-path',       -- パス補完ソース
   'saadparwaiz1/cmp_luasnip',  -- LuaSnip と連携する補完ソース
   'L3MON4D3/LuaSnip', -- LuaSnip スニペットエンジン
-  -- LSPの設定終わり
+
 
   -- One Monokai カラースキーム---------------------------------------
   {

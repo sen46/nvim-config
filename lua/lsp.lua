@@ -8,7 +8,7 @@ lspconfig.clangd.setup({
     local opts = { noremap = true, silent = true, buffer = bufnr }
 
     -- キーマッピングを設定（よりシンプルな方法）
-    vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+    vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts) -- 定義ジャンプ
     vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
     vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
     vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts) -- 変数のリネーム
