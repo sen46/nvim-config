@@ -32,5 +32,5 @@ vim.opt.termguicolors = true -- 24ビットカラーを有効化
 vim.opt.signcolumn = 'yes' -- 行番号の横に余白を確保（警告やGitの変更表示用）
 vim.opt.hidden = true -- 未保存のバッファを切り替え可能にする
 vim.opt.swapfile = false -- スワップファイルを生成しない
-
-
+vim.opt.cursorline = true -- 現在の行をハイライトにする
+vim.opt.linebreak = false -- 単語単位で折り返すかどうか
