@@ -22,7 +22,7 @@ vim.opt.ignorecase = true -- 検索時に大文字小文字を区別しない
 vim.opt.smarttab = true -- インデント時に `shiftwidth` を考慮したタブ動作をする
 vim.opt.breakindent = true -- 折り返し時にインデントを保持
 vim.opt.shiftwidth = 4 -- 自動インデント時のスペース数
-vim.opt.tabstop = 4 -- タブ文字の幅を2スペースに設定
+vim.opt.tabstop = 4 -- タブ文字の幅を4スペースに設定
 vim.opt.wrap = true -- 端までコードが届いた際に折り返す
 vim.opt.helplang = 'ja', 'en' -- ヘルプの言語を日本語、英語の順で適用
 vim.opt.updatetime = 300 -- イベントの更新間隔を短縮（デフォルト: 4000ms）
@@ -34,3 +34,6 @@ vim.opt.hidden = true -- 未保存のバッファを切り替え可能にする
 vim.opt.swapfile = false -- スワップファイルを生成しない
 vim.opt.cursorline = true -- 現在の行をハイライトにする
 vim.opt.linebreak = false -- 単語単位で折り返すかどうか
+
+--vim.opt.list = true
+--vim.opt.listchars = { tab = "»-", trail = "·", extends = "→", precedes = "←", space = "·" }

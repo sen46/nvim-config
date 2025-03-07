@@ -32,9 +32,6 @@ require('options')
 -- キーマップの設定
 require('keymaps')
 
--- autocommand
-require('autocmd')
-
 -- Node.js のパスを設定
 vim.g.coc_node_path = '/usr/bin/node'
 
