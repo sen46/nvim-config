@@ -44,5 +44,16 @@ cmp.setup({
     { name = 'buffer' },
     { name = 'path' },
   }),
+
+  -- 特定の単語を除外する
+  entry_filter = function(entry, ctx)
+    local ignored_words = { "else" }
+    for _, word in ipairs(ignored_words) do
+      if entry.completion_item.label == word then
+        return false
+      end
+    end
+    return true
+  end,
 })
 
