@@ -15,7 +15,7 @@ vim.keymap.set('n', 'sl', '<C-w>l')
 -- Emacs風
 vim.keymap.set('i', '<C-f>', '<Right>')
 
--- jjでEscする
+-- jkでEscする
 vim.keymap.set('i', 'jk', '<Esc>')
 
 -- 設定ファイルを開く

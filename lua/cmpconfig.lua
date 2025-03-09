@@ -39,21 +39,11 @@ cmp.setup({
     end,
   },
   sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-    { name = 'luasnip' }, -- スニペット補完の追加
+    { name = 'nvim_lsp', priority = 5 }, -- デフォの補完
+    { name = 'luasnip', priority = 10 }, -- スニペット補完の追加
     { name = 'buffer' },
     { name = 'path' },
   }),
 
-  -- 特定の単語を除外する
-  entry_filter = function(entry, ctx)
-    local ignored_words = { "else" }
-    for _, word in ipairs(ignored_words) do
-      if entry.completion_item.label == word then
-        return false
-      end
-    end
-    return true
-  end,
 })
 
