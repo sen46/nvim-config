@@ -22,3 +22,13 @@ lspconfig.clangd.setup({
 })
 
 lspconfig.pyright.setup({})
+
+
+lspconfig.rust_analyzer.setup({
+  settings = {
+    ["rust-analyzer"] = {
+      cargo = { allFeatures = true },
+      procMacro = { enable = true },
+    },
+  },
+})
