@@ -27,8 +27,42 @@ lspconfig.pyright.setup({})
 lspconfig.rust_analyzer.setup({
   settings = {
     ["rust-analyzer"] = {
-      cargo = { allFeatures = true },
-      procMacro = { enable = true },
+      cargo = {
+        allFeatures = true, -- すべての feature を有効にする
+        loadOutDirsFromCheck = true, -- `OUT_DIR` の設定を `cargo check` から取得する
+        runBuildScripts = true, -- ビルドスクリプトを実行する
+      },
+      procMacro = {
+        enable = true, -- マクロ展開を有効化
+      },
+      check = {
+        command = "clippy", -- `clippy` を使って保存時にコードをチェック
+        -- enable = false, -- 保存時チェック機能を無効化
+      },
+      diagnostics = {
+        disabled = { "unresolved-proc-macro" }, -- `proc_macro` の未解決エラーを無効化
+      },
+      completion = {
+        postfix = { enable = true }, -- `dbg`, `.unwrap()`, `.if` などの補完を有効化
+      },
+      hover = {
+        actions = {
+          references = true, -- ホバー時に参照情報を表示
+        },
+      },
+      inlayHints = {
+        enable = true, -- インレイヒントを有効化
+        parameterHints = true, -- 関数の引数ヒントを表示
+        chainingHints = true, -- メソッドチェーンの型ヒントを表示
+        closingBraceHints = {
+          enable = true, -- ブロックの閉じ括弧の位置を補助するヒントを表示
+          minLines = 2, -- 指定行以上のブロックに適用
+        },
+      },
+      lens = {
+        enable = true, -- コードレンズ（テスト実行ボタンなど）を有効化
+      },
     },
   },
 })
+

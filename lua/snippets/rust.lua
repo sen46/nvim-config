@@ -1,45 +1,46 @@
 local ls = require("luasnip")
 local s = ls.snippet
 local t = ls.text_node
+local i = ls.insert_node
 
 ls.add_snippets("rust", {
-  s("fn", {
-    t("fn "), i(1, "function_name"), t("("), i(2, "args"), t(") -> "), i(3, "ReturnType"), t(" {"), 
-    t({ "", "    " }), i(4, "body"), t({ "", "}" })
+  -- `fn` 関数宣言スニペット
+  s("main", {
+    t({"fn main()", "{"}),
+    t({"", "    "}), i(1),  -- 4スペースインデントの後にカーソル
+    t({"", "}"}),
   }),
 
-  -- `let` キーワードで変数宣言を補完するスニペット
+  -- `let` 変数宣言スニペット
   s("let", {
     t("let "), i(1, "variable_name"), t(" = "), i(2, "value"), t(";")
   }),
 
-  -- `for` ループのスニペット
-  s("for", {
-    t("for "), i(1, "item"), t(" in "), i(2, "iterable"), t(" {"), 
-    t({ "", "    " }), i(3, "body"), t({ "", "}" })
+  -- let mut のスニペット
+  s("let mut", {
+      t("let mut ")
   }),
 
-  -- `if` 文のスニペット
-  s("if", {
-    t("if "), i(1, "condition"), t(" {"), 
-    t({ "", "    " }), i(2, "body"), t({ "", "}" })
-  }),
-
-  -- `match` ステートメントのスニペット
+  -- `match` ステートメントスニペット
   s("match", {
     t("match "), i(1, "value"), t(" {"), 
     t({ "", "    " }), i(2, "arm"), t({ "", "}" })
   }),
 
-  -- `mod` 宣言のスニペット
+  -- `mod` モジュール宣言スニペット
   s("mod", {
     t("mod "), i(1, "module_name"), t(" {"), 
     t({ "", "    " }), i(2, "body"), t({ "", "}" })
   }),
 
-  -- `struct` 宣言のスニペット
+  -- `struct` 構造体宣言スニペット
   s("struct", {
     t("struct "), i(1, "StructName"), t(" {"), 
     t({ "", "    " }), i(2, "fields"), t({ "", "}" })
   }),
+
+    s("println!", {
+        t('println!("'), i(1), t('"'), i(2), t(');')
+    })
 })
+

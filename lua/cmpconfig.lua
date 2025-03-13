@@ -4,6 +4,8 @@ local luasnip = require'luasnip' -- LuaSnip を require して変数に格納
 require("snippets.init")  -- スニペットを読み込む
 
 cmp.setup({
+  preselect = cmp.PreselectMode.None, -- 最初の候補が選択されるようにした
+
   snippet = {
     expand = function(args)
       luasnip.lsp_expand(args.body) -- ここでスニペットを展開
