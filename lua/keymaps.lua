@@ -22,7 +22,7 @@ vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('n', '<F1>', ':edit $MYVIMRC<CR>')
 
 -- "\e"でファイルツリーを開く
-vim.keymap.set("n","<leader>e",":NvimTreeToggle<CR>")
+vim.keymap.set("n","<leader>e",":Neotree toggle<CR>")
 
 -- "cpl"で全選択コピー
 vim.keymap.set("n", "cpal", "ggVGy")
