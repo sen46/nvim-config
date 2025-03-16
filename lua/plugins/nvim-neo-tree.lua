@@ -28,6 +28,7 @@ return {
           ["i"] = "open_split", -- 水平分割で開く
           ["R"] = "refresh", -- `R` でリフレッシュ
           ["q"] = "close_window", -- `q` で閉じる
+          ["<Tab>"] = "preview",
         },
       },
       git_status = {
