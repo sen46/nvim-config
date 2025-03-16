@@ -55,6 +55,7 @@ ls.add_snippets("cpp", {
 
   -- else, else ifのスニペットを空白に置換
   s("else", t({"else", ""})),
-  s("else if", t({"else if", ""}))
+  s("else if", t({"else if", ""})),
+  s("do", t({"do", ""})),
 })
 

@@ -26,3 +26,5 @@ vim.keymap.set("n","<leader>e",":NvimTreeToggle<CR>")
 
 -- "cpl"で全選択コピー
 vim.keymap.set("n", "cpal", "ggVGy")
+-- clear で空にする
+vim.keymap.set("n", "clear", ":%d<CR>")
