@@ -11,8 +11,8 @@ return {
   require("plugins.toggleterm"),
   require("plugins.gitsigns"),
   require("plugins.lualine"),
-
-
+  require("plugins.hlchunk"),
+  require("plugins.treesitter"),
 
   -- git管理--------------------------------------------------------------
   -- vim-fugitive
