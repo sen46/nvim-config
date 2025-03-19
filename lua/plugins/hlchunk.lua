@@ -1,28 +1,34 @@
+-- hlchunk.nvim プラグインの設定
 return {
   "shellRaining/hlchunk.nvim",
-  event = { "VimEnter", "BufNewFile" },
+  event = { "UIEnter" },
   config = function()
     require("hlchunk").setup({
-      priority = 15,
-      style = {
-        { fg = "#806d9c" },
-        { fg = "#c21f30" },
+      chunk = {
+        enable = true,
+        use_treesitter = true,  -- Treesitter を使用
+        notify = true, -- notify if some situation (like disabling chunk mod twice)
+        exclude_filetypes = {
+          aerial = true,
+          dashboard = true,
+        },
+        support_filetypes = { 
+            "lua", 
+            "cpp",
+            "h", 
+        }, -- サポートするファイルタイプ
+        chars = {
+          horizontal_line = "─",
+          vertical_line = "│",
+          left_top = "╭",
+          left_bottom = "╰",
+          right_arrow = ">",
+        },
+        style = {
+          { fg = "#806d9c" },
+        },
       },
-      use_treesitter = true,
-      chars = {
-        horizontal_line = "─",
-        vertical_line = "│",
-        left_top = "╭",
-        left_bottom = "╰",
-        right_arrow = ">",
-      },
-      textobject = "",
-      max_file_size = 1024 * 1024,
-      error_sign = true,
-      -- animation related
-      duration = 200,
-      delay = 300,
     })
-  end
+  end,
 }
 
