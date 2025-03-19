@@ -1,3 +1,4 @@
+```
 .
 ├── init.lua
 ├── lazy-lock.json
@@ -22,3 +23,4 @@
         ├── init.lua
         ├── python.lua
         └── rust.lua
+```
