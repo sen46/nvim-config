@@ -7,6 +7,7 @@ ls.add_snippets("cpp", {
   s("kyopuro", {
     t({
       "#include <bits/stdc++.h>",
+      "",
       "using namespace std;",
       "",
       "#define rep(i,m,n) for(int i=m; i<(int)(n); i++)",
@@ -29,6 +30,8 @@ ls.add_snippets("cpp", {
       "using vb = vector<bool>;",
       "using vvb = vector<vector<bool>>;",
       "using pii = pair<int, int>;",
+      "using pil = pair<int, ll>;",
+      "using pli = pair<ll, int>;",
       "using pll = pair<ll, ll>;",
       "using Graph = vector<vector<int>>;",
       "using Node = pair<int, int>;",
