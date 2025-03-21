@@ -2,7 +2,7 @@
 local opt = vim.opt
 
 opt.number = true          -- 行番号を表示
-opt.relativenumber = false  -- 相対行番号を表示
+opt.relativenumber = true  -- 相対行番号を表示
 opt.ignorecase = true      -- 検索時に大文字小文字を無視
 opt.smartcase = true       -- 大文字を含む場合は区別する
 vim.opt.mouse = 'a' -- マウス操作を有効化（全モードでマウス使用可能）
