@@ -13,6 +13,7 @@ return {
   require("plugins.lualine"),
   require("plugins.hlchunk"),
   require("plugins.treesitter"),
+  require("plugins.mason"),
 
   -- git管理--------------------------------------------------------------
   -- vim-fugitive
