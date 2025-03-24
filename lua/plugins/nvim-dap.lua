@@ -12,7 +12,15 @@ return {
       local dap = require("dap")
       local dapui = require("dapui")
 
-      dapui.setup()
+      dapui.setup({
+        icons = {
+            expanded = "",   -- 展開された状態のアイコン
+            collapsed = "",   -- 折りたたまれた状態のアイコン
+            breakpoint = "",  -- ブレークポイントのアイコン
+            breakpoint_rejected = "",  -- 拒否されたブレークポイントのアイコン
+            log_point = "",  -- ログポイントのアイコン
+    stopped = "",    -- 停止状態のアイコン
+  }      })
 
       -- DAPイベントに応じてUIを開閉
       dap.listeners.after.event_initialized["dapui_config"] = function()
