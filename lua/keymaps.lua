@@ -28,3 +28,20 @@ vim.keymap.set("n","<leader>e",":Neotree toggle<CR>")
 vim.keymap.set("n", "cpal", ":%y<CR>") -- copy all
 -- clear で空にする
 vim.keymap.set("n", "clear", ":%d<CR>")
+
+
+
+-- debug関係
+    -- キーバインド設定
+    local dap = require("dap")
+    local dapui = require("dapui")
+
+    -- キーバインド設定
+    vim.keymap.set("n", "<F5>", function() dap.continue() end, { desc = "デバッグ開始/継続" })
+    vim.keymap.set("n", "<F10>", function() dap.step_over() end, { desc = "ステップオーバー" })
+    vim.keymap.set("n", "<F11>", function() dap.step_into() end, { desc = "ステップイン" })
+    vim.keymap.set("n", "<F12>", function() dap.step_out() end, { desc = "ステップアウト" })
+    vim.keymap.set("n", "<Leader>b", function() dap.toggle_breakpoint() end, { desc = "ブレークポイントの切り替え" })
+    vim.keymap.set("n", "<Leader>B", function() dap.set_breakpoint(vim.fn.input("Condition: ")) end, { desc = "条件付きブレークポイント" })
+    vim.keymap.set("n", "<Leader>dr", function() dap.repl.open() end, { desc = "デバッグ用REPLを開く" })
+    vim.keymap.set("n", "<Leader>du", function() dapui.toggle() end, { desc = "DAP UIの切り替え" })

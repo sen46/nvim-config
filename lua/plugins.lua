@@ -14,6 +14,8 @@ return {
   require("plugins.hlchunk"),
   require("plugins.treesitter"),
   require("plugins.mason"),
+  require("plugins.nvim-dap"),
+  require("plugins.dap-gdb"),
 
   -- git管理--------------------------------------------------------------
   -- vim-fugitive
