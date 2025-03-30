@@ -27,7 +27,7 @@ vim.keymap.set("n","<leader>e",":Neotree toggle<CR>")
 -- "cpl"で全選択コピー
 vim.keymap.set("n", "cpal", ":%y<CR>") -- copy all
 -- clear で空にする
-vim.keymap.set("n", "clear", ":%d<CR>")
+vim.keymap.set("n", "clr", ":%d<CR>") -- clear
 
 
 

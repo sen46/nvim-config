@@ -24,6 +24,7 @@ return {
         end,
         cwd = "${workspaceFolder}",
         stopAtEntry = true,
+        runInTerminal = true,
       },
     }
     dap.configurations.c = dap.configurations.cpp
