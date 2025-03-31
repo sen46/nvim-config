@@ -11,7 +11,7 @@ ls.add_snippets("cpp", {
       "using namespace std;",
       "",
       "#define rep(i,n) for(int i=0; i<(int)(n); i++)",
-      "#define repp(i,m,n) for (int i = m; i < (int)(n); i++)",
+      "#define repp(i,m,n) for (int i=m; i<(int)(n); i++)",
       "#define pb emplace_back",
       "#define all(x) x.begin(), x.end()",
       "#define rall(x) x.rbegin(), x.rend()",
