@@ -18,7 +18,7 @@ ls.add_snippets("cpp", {
             "#define INF 1001001001",
             "#define INFF 1001001001001001001",
             "using ll = long long;",
-            "using ull = unsigned ll;",
+            "using ull = unsigned long long;",
             "using ld = long double;",
             "using vi = vector<int>;",
             "using vvi = vector<vi>;",
