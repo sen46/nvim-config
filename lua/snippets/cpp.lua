@@ -40,6 +40,8 @@ ls.add_snippets("cpp", {
             "",
             "int main()",
             "{",
+            "    cin.tie(nullptr);",
+            "    ios_base::sync_with_stdio(false);",
             "    "
         }),
         i(0),
