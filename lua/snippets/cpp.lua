@@ -96,7 +96,8 @@ ls.add_snippets("cpp", {
             "    int size(int x) {",
             "        return siz[root(x)];",
             "    }",
-            "};"
+            "};",
+            "",
         })
     })
 })
