@@ -68,7 +68,7 @@ ls.add_snippets("cpp", {
     s("uf", {
         t({
             "struct UnionFind",
-            "    {"
+            "{",
             "    vector<int> par, rank, siz;",
             "",
             "    UnionFind(int n) : par(n,-1), rank(n,0), siz(n,1) { }",
@@ -98,7 +98,7 @@ ls.add_snippets("cpp", {
             "    }",
             "",
             "    int size(int x)",
-            "    {"
+            "    {",
             "        return siz[root(x)];",
             "    }",
             "};",
