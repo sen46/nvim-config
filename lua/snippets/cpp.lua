@@ -4,6 +4,7 @@ local t = ls.text_node
 local i = ls.insert_node
 
 ls.add_snippets("cpp", {
+    -- 協議プログラミングのテンプレート
     s("kyopuro", {
         t({
             "#include <bits/stdc++.h>",
@@ -55,6 +56,7 @@ ls.add_snippets("cpp", {
         }),
     }),
     
+    -- 座標の上下左右移動
     s("dxdy", {
         t({
             "const int dx[4] = {1, 0, -1, 0};",
@@ -62,6 +64,7 @@ ls.add_snippets("cpp", {
         })
     }),
     
+    -- コード補完の無効化
     s("else", t({"else", ""})),
     s("else if", t({"else if", ""})),
     s("do", t({"do", ""})),
@@ -70,10 +73,12 @@ ls.add_snippets("cpp", {
         t("rep("), i(1, "i"), t(", "), i(2, "start"), t(", "), i(3, "end"), t(")")
     }),
     
-    s("uf", {
+    -- UfionFind クラス
+    s("UF", {
         t({
-            "struct UnionFind",
+            "class UnionFind",
             "{",
+            "public:",
             "    vector<int> par, rank, siz;",
             "",
             "    UnionFind(int n) : par(n, -1), rank(n, 0), siz(n, 1)",
