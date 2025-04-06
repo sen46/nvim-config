@@ -14,6 +14,7 @@ vim.opt.backup = false -- バックアップファイルを作成しない
 vim.opt.showcmd = true -- コマンド入力中にコマンドを表示
 vim.opt.cmdheight = 2 -- コマンドラインの高さを2行に設定
 vim.opt.laststatus = 2 -- ステータスラインを常に表示
+-- 42tokyo用はfalse
 vim.opt.expandtab = true -- タブをスペースに変換
 vim.opt.scrolloff = 10 -- カーソルの上下に最低10行の余白を確保
 vim.opt.shell = 'zsh' -- シェルに `zsh` を使用
