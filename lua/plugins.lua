@@ -16,6 +16,7 @@ return {
   require("plugins.mason"),
   require("plugins.nvim-dap"),
   require("plugins.dap-gdb"),
+  require("plugins.42-header"),
 
   -- git管理--------------------------------------------------------------
   -- vim-fugitive
