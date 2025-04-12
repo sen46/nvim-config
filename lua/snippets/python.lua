@@ -12,6 +12,13 @@ ls.add_snippets("python", {
       "    pass",
     }),
   }),
-  s("print", { t("print("), i(1), t(")") })
+  s("print", { t("print("), i(1), t(")") }),
+
+  s("ml", {
+    t({
+      "import numpy as np",
+      "import matplotlib.pyplot as plt",
+    }),
+  }),
 })
 
