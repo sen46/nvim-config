@@ -14,8 +14,9 @@ return {
   require("plugins.hlchunk"),
   require("plugins.treesitter"),
   require("plugins.mason"),
-  require("plugins.nvim-dap"),
-  require("plugins.dap-gdb"),
+--  require("plugins.nvim-dap"),
+--  require("plugins.dap-gdb"),
+  require("plugins.dap"),
   require("plugins.42-header"),
 
   -- git管理--------------------------------------------------------------

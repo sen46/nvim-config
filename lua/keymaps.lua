@@ -13,7 +13,7 @@ vim.keymap.set('n', 'sj', '<C-w>j')
 vim.keymap.set('n', 'sl', '<C-w>l')
 
 -- Emacs風
-vim.keymap.set('i', '<C-f>', '<Right>')
+-- vim.keymap.set('i', '<C-f>', '<Right>')
 
 -- jkでEscする
 vim.keymap.set('i', 'jk', '<Esc>')
@@ -26,7 +26,7 @@ vim.keymap.set("n","<leader>e",":Neotree toggle<CR>")
 
 -- "cpl"で全選択コピー
 vim.keymap.set("n", "cpal", ":%y<CR>") -- copy all
--- clear で空にする
+-- clr で空にする
 vim.keymap.set("n", "clr", ":%d<CR>") -- clear
 
 
