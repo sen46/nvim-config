@@ -15,7 +15,7 @@ vim.opt.showcmd = true -- コマンド入力中にコマンドを表示
 vim.opt.cmdheight = 2 -- コマンドラインの高さを2行に設定
 vim.opt.laststatus = 2 -- ステータスラインを常に表示
 -- 42tokyo用はfalse
-vim.opt.expandtab = true -- タブをスペースに変換
+vim.opt.expandtab = false -- タブをスペースに変換
 vim.opt.scrolloff = 10 -- カーソルの上下に最低10行の余白を確保
 vim.opt.shell = 'zsh' -- シェルに `zsh` を使用
 vim.opt.inccommand = 'split' -- 置換時に結果をリアルタイムでプレビュー（分割表示）
@@ -40,5 +40,7 @@ vim.opt.pumblend = 20 -- ポップアップメニューの不透明度
 
 -- vim.opt.linebreak = false -- 単語単位で折り返すかどうか
 
---vim.opt.list = true
---vim.opt.listchars = { tab = "»-", trail = "·", extends = "→", precedes = "←", space = "·" }
+vim.opt.list = true
+vim.opt.listchars = { tab = "»-", trail = "·", extends = "→", precedes = "←", space = " " }
+
+

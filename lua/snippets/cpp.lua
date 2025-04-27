@@ -4,7 +4,7 @@ local t = ls.text_node
 local i = ls.insert_node
 
 ls.add_snippets("cpp", {
-    -- 協議プログラミングのテンプレート
+    -- 競技プログラミングのテンプレート
     s("kyopuro", {
         t({
             "#include <bits/stdc++.h>",

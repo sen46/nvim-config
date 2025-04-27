@@ -2,6 +2,7 @@ local luasnip = require("luasnip")
 
 -- 各言語のスニペットをロード
 require("snippets.cpp")
+require("snippets.c")
 require("snippets.python")
 require("snippets.rust")
 
@@ -9,9 +10,12 @@ require("snippets.rust")
 vim.api.nvim_create_user_command("LuaSnipReload", function()
   luasnip.cleanup()
   package.loaded["snippets.cpp"] = nil
+  package.loaded["snippets.c"] = nil
   package.loaded["snippets.python"] = nil
   package.loaded["snippets.rust"] = nil
+
   require("snippets.cpp")
+  require("snippets.c")
   require("snippets.python")
   require("snippets.rust")
   print("LuaSnip snippets reloaded!")

@@ -1,5 +1,3 @@
--- init.lua
-
 -- Lazy.nvim のパスを設定
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -34,4 +32,3 @@ require('keymaps')
 
 -- Node.js のパスを設定
 vim.g.coc_node_path = '/usr/bin/node'
-
