@@ -40,18 +40,22 @@ ls.add_snippets("cpp", {
             "using Graph = vector<vector<int>>;",
             "using Node = pair<int, int>;",
             "",
+			"void Init()",
+			"{",
+            "	cin.tie(nullptr);",
+            "	ios_base::sync_with_stdio(false);",
+			"}",
             "",
             "int main()",
             "{",
-            "    cin.tie(nullptr);",
-            "    ios_base::sync_with_stdio(false);",
-            "    ",
-            "    "
+			"	Init();",
+            "",
+            "	"
         }),
         i(0),
         t({
             "",
-            "    return (0);",
+            "	return (0);",
             "}"
         }),
     }),
